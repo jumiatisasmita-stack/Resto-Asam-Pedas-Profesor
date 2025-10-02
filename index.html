@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Meta Tags Utama untuk Homepage -->
+    <title>Resto Asam Pedas Profesor - Cita Rasa Autentik Bikin Nagih</title>
+    <meta name="description" content="Selamat datang di Resto Asam Pedas Profesor! Nikmati kelezatan asam pedas autentik dengan resep warisan yang tak terlupakan. Pesan sekarang!">
+    <meta name="keywords" content="asam pedas, resto asam pedas, kuliner riau, masakan melayu">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-orange-50/50">
+
+    <!-- Header & Navigasi -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" data-target="home" class="font-display text-2xl font-bold text-orange-800">
+                Asam Pedas Profesor
+            </a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#" data-target="home" class="nav-link text-gray-600 hover:text-orange-700 transition-colors active-link">Beranda</a>
+                <a href="#" data-target="menu" class="nav-link text-gray-600 hover:text-orange-700 transition-colors">Menu</a>
+                <a href="#" data-target="blog" class="nav-link text-gray-600 hover:text-orange-700 transition-colors">Blog</a>
+                <a href="#" data-target="order" class="nav-link text-gray-600 hover:text-orange-700 transition-colors">Pesan Sekarang</a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-gray-600 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="#" data-target="home" class="nav-link block py-2 px-4 text-sm text-gray-600 hover:bg-orange-100">Beranda</a>
+            <a href="#" data-target="menu" class="nav-link block py-2 px-4 text-sm text-gray-600 hover:bg-orange-100">Menu</a>
+            <a href="#" data-target="blog" class="nav-link block py-2 px-4 text-sm text-gray-600 hover:bg-orange-100">Blog</a>
+            <a href="#" data-target="order" class="nav-link block py-2 px-4 text-sm text-gray-600 hover:bg-orange-100">Pesan Sekarang</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto p-4 md:p-8">
+        
+        <!-- Halaman Beranda -->
+        <section id="home-page" class="page">
+            <div class="bg-cover bg-center rounded-lg shadow-xl h-96 flex items-center justify-center text-center" style="background-image: url('https://placehold.co/1200x600/f97316/ffffff?text=Selamat+Datang!')">
+                <div class="bg-black bg-opacity-50 p-8 rounded-md">
+                    <h1 class="font-display text-4xl md:text-6xl font-bold text-white">Rasa Asam Pedas yang Sebenarnya</h1>
+                    <p class="text-white mt-4 max-w-2xl">Resep warisan keluarga yang diolah dari bahan-bahan segar pilihan, menciptakan cita rasa autentik yang akan selalu Anda rindukan.</p>
+                    <button data-target="menu" class="mt-8 bg-orange-600 hover:bg-orange-700 text-white font-bold py-3 px-8 rounded-full transition-transform transform hover:scale-105">
+                        Lihat Menu Kami
+                    </button>
+                </div>
+            </div>
+
+            <!-- Galeri Gambar -->
+            <div class="mt-16 text-center">
+                <h2 class="font-display text-4xl font-bold text-orange-800">Galeri Kami</h2>
+                <p class="text-gray-600 mt-2">Intip Suasana dan Kelezatan di Resto Kami</p>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8">
+                    <div class="overflow-hidden rounded-lg shadow-lg">
+                        <img src="https://placehold.co/600x600/ef4444/ffffff?text=Asam+Pedas+Baung" alt="Foto Asam Pedas Ikan Baung yang lezat" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-300">
+                    </div>
+                    <div class="overflow-hidden rounded-lg shadow-lg">
+                        <img src="https://placehold.co/600x600/f97316/ffffff?text=Suasana+Resto" alt="Foto suasana nyaman di Resto Asam Pedas Profesor" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-300">
+                    </div>
+                    <div class="overflow-hidden rounded-lg shadow-lg">
+                        <img src="https://placehold.co/600x600/fbbf24/ffffff?text=Ikan+Krispi" alt="Foto Ikan Pantau Krispi yang renyah" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-300">
+                    </div>
+                    <div class="overflow-hidden rounded-lg shadow-lg">
+                        <img src="https://placehold.co/600x600/22c55e/ffffff?text=Pelanggan+Senang" alt="Foto pelanggan yang puas menikmati hidangan" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-300">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Halaman Menu -->
+        <section id="menu-page" class="page hidden">
+            <h1 class="font-display text-4xl text-center font-bold text-orange-800 mb-8">Menu Andalan Kami</h1>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Menu Item -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://placehold.co/600x400/fb923c/ffffff?text=Asam+Pedas+Ikan+Patin" alt="Asam Pedas Ikan Patin" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2 text-orange-900">Asam Pedas Ikan Patin</h3>
+                        <p class="text-gray-700 text-base">Daging ikan patin yang lembut berpadu dengan kuah asam pedas yang kental dan kaya rempah.</p>
+                    </div>
+                </div>
+                <!-- Menu Item -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://placehold.co/600x400/fb923c/ffffff?text=Asam+Pedas+Ikan+Baung" alt="Asam Pedas Ikan Baung" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2 text-orange-900">Asam Pedas Ikan Baung</h3>
+                        <p class="text-gray-700 text-base">Sensasi rasa ikan baung segar dengan kuah asam pedas yang meresap sempurna hingga ke tulang.</p>
+                    </div>
+                </div>
+                <!-- Menu Item -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://placehold.co/600x400/fb923c/ffffff?text=Ikan+Pantau+Krispi" alt="Ikan Pantau Krispi" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2 text-orange-900">Ikan Pantau Krispi</h3>
+                        <p class="text-gray-700 text-base">Menu pelengkap yang renyah dan gurih, cocok dinikmati bersama nasi hangat dan asam pedas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Halaman Daftar Blog -->
+        <section id="blog-page" class="page hidden">
+            <h1 class="font-display text-4xl text-center font-bold text-orange-800 mb-8">Blog & Tips Kuliner</h1>
+            <div class="space-y-12">
+                <!-- Blog Post Card 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col md:flex-row gap-6">
+                    <img src="https://placehold.co/400x300/4ade80/ffffff?text=Digital+Marketing" alt="Strategi digital marketing resto asam pedas" class="w-full md:w-1/3 h-48 object-cover rounded-md">
+                    <div class="flex flex-col justify-between">
+                        <div>
+                            <h2 class="font-display text-2xl font-bold text-orange-900 mb-2">Digital Marketing Resto Asam Pedas: Strategi Meningkatkan Penjualan</h2>
+                            <p class="text-gray-600 mb-4">Pelajari strategi digital marketing resto asam pedas Profesor untuk meningkatkan penjualan dan memperluas jangkauan pelanggan dengan teknik SEO dan media sosial.</p>
+                        </div>
+                        <button data-target="article1" class="self-start bg-orange-600 text-white font-semibold py-2 px-4 rounded-md hover:bg-orange-700 transition-colors">Baca Selengkapnya</button>
+                    </div>
+                </div>
+                 <!-- Blog Post Card 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col md:flex-row gap-6">
+                    <img src="https://placehold.co/400x300/f97316/ffffff?text=Asam+Pedas" alt="Keistimewaan asam pedas Profesor" class="w-full md:w-1/3 h-48 object-cover rounded-md">
+                    <div class="flex flex-col justify-between">
+                        <div>
+                            <h2 class="font-display text-2xl font-bold text-orange-900 mb-2">Asam Pedas Profesor: Rahasia Rasa yang Bikin Ketagihan</h2>
+                            <p class="text-gray-600 mb-4">Temukan keistimewaan asam pedas Profesor yang autentik dan menggugah selera, serta berbagai pilihan menu spesial di Resto Asam Pedas Profesor.</p>
+                        </div>
+                        <button data-target="article2" class="self-start bg-orange-600 text-white font-semibold py-2 px-4 rounded-md hover:bg-orange-700 transition-colors">Baca Selengkapnya</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Halaman Pesan -->
+        <section id="order-page" class="page hidden">
+             <div class="text-center">
+                <h1 class="font-display text-4xl font-bold text-orange-800 mb-4">Pesan Sekarang!</h1>
+                <p class="text-gray-700 text-lg max-w-2xl mx-auto mb-8">Nikmati kelezatan Asam Pedas Profesor di rumah Anda. Hubungi kami melalui WhatsApp atau pesan melalui aplikasi favorit Anda.</p>
+                <div class="flex justify-center gap-4">
+                    <a href="#" class="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-8 rounded-full transition-transform transform hover:scale-105">
+                        WhatsApp
+                    </a>
+                    <a href="#" class="bg-red-500 hover:bg-red-600 text-white font-bold py-3 px-8 rounded-full transition-transform transform hover:scale-105">
+                        GoFood
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- =============================================================== -->
+        <!--                          ARTIKEL 1                              -->
+        <!-- =============================================================== -->
+        <article id="article1-page" class="page hidden prose max-w-none lg:prose-xl bg-white p-8 rounded-lg shadow-lg">
+            <!-- Meta Title (konseptual): Digital Marketing Resto Asam Pedas: Strategi Meningkatkan Penjualan -->
+            <!-- Meta Deskripsi (konseptual): Pelajari strategi digital marketing resto asam pedas Profesor untuk meningkatkan penjualan dan memperluas jangkauan pelanggan dengan teknik SEO dan media sosial. -->
+            
+            <h1 class="text-orange-900">Strategi Digital Marketing untuk Resto Asam Pedas Profesor</h1>
+            
+            <p class="lead">Di era digital saat ini, memiliki produk yang lezat saja tidak cukup. Restoran harus mampu menjangkau calon pelanggan secara online. Inilah mengapa digital marketing menjadi kunci sukses bagi bisnis kuliner, termasuk untuk Resto Asam Pedas Profesor.</p>
+            
+            <p>Dengan strategi yang tepat, kami tidak hanya menyajikan hidangan berkualitas, tetapi juga memastikan kabar kelezatan Asam Pedas Profesor sampai kepada Anda, para pecinta kuliner. Mari kita bedah beberapa strategi yang kami terapkan.</p>
+            
+            <img src="https://placehold.co/800x400/22c55e/ffffff?text=Ilustrasi+Marketing+Digital" alt="Strategi digital marketing resto asam pedas untuk menjangkau pelanggan baru" class="rounded-lg shadow-md my-8">
+            
+            <h2 class="text-orange-800">1. Optimasi Mesin Pencari (SEO) Lokal</h2>
+            <p>Salah satu fokus utama kami adalah memastikan Resto Asam Pedas Profesor mudah ditemukan di Google. Ketika seseorang mencari "asam pedas enak di Pekanbaru" atau "restoran masakan Melayu terdekat", kami ingin tampil di urutan teratas. Ini adalah kekuatan dari <strong>digital marketing resto asam pedas</strong> yang berfokus pada SEO lokal. Kami mengoptimalkan website dan profil Google Business kami dengan kata kunci yang relevan agar Anda lebih mudah menemukan kami.</p>
+
+            <h2 class="text-orange-800">2. Konten Menarik di Media Sosial</h2>
+            <p>Siapa yang tidak tergoda melihat foto hidangan asam pedas dengan kuah merah menyala? Kami aktif di platform seperti Instagram dan Facebook untuk membagikan foto-foto berkualitas tinggi dari menu kami, suasana resto, hingga testimoni pelanggan. Interaksi langsung dengan pelanggan melalui media sosial membantu kami membangun komunitas yang loyal dan selalu menantikan menu baru dari kami.</p>
+
+            <img src="https://placehold.co/800x400/f59e0b/ffffff?text=Suasana+Resto+Ramai" alt="Suasana Resto Asam Pedas Profesor yang ramai berkat promosi digital marketing" class="rounded-lg shadow-md my-8">
+
+            <p>Strategi-strategi ini membantu kami untuk terus berkembang dan melayani lebih banyak pelanggan. Ingin tahu apa saja menu yang kami tawarkan berkat kesuksesan promosi kami? Anda bisa melihat <a href="#" data-target="menu" class="text-orange-600 hover:underline">menu andalan kami di sini</a>.</p>
+        </article>
+
+        <!-- =============================================================== -->
+        <!--                          ARTIKEL 2                              -->
+        <!-- =============================================================== -->
+        <article id="article2-page" class="page hidden prose max-w-none lg:prose-xl bg-white p-8 rounded-lg shadow-lg">
+            <!-- Meta Title (konseptual): Asam Pedas Profesor: Rahasia Rasa yang Bikin Ketagihan -->
+            <!-- Meta Deskripsi (konseptual): Temukan keistimewaan asam pedas Profesor yang autentik dan menggugah selera, serta berbagai pilihan menu spesial di Resto Asam Pedas Profesor. -->
+
+            <h1 class="text-orange-900">Keistimewaan Asam Pedas Profesor yang Otentik dan Lezat</h1>
+
+            <p class="lead">Banyak yang menyajikan asam pedas, namun hanya sedikit yang mampu menciptakan rasa yang benar-benar melekat di hati dan lidah. Di Resto Asam Pedas Profesor, kami bangga menyajikan cita rasa autentik yang membuat pelanggan selalu kembali. Apa rahasianya?</p>
+            
+            <img src="https://placehold.co/800x400/ef4444/ffffff?text=Hidangan+Asam+Pedas+Profesor" alt="Hidangan istimewa asam pedas Profesor dengan kuah menggugah selera" class="rounded-lg shadow-md my-8">
+
+            <h2 class="text-orange-800">Bahan Baku Segar dan Rempah Pilihan</h2>
+            <p>Kunci utama dari kelezatan <strong>asam pedas Profesor</strong> adalah komitmen kami terhadap kualitas. Kami hanya menggunakan ikan segar pilihan dan bumbu rempah alami yang diolah setiap hari. Tanpa bahan pengawet dan perasa buatan, rasa yang dihasilkan murni dari kekayaan rempah-rempah nusantara.</p>
+            
+            <h2 class="text-orange-800">Proses Memasak Warisan Leluhur</h2>
+            <p>Resep kami bukanlah resep biasa. Ini adalah warisan turun-temurun yang dijaga keasliannya. Proses memasak yang perlahan (slow cooking) memastikan semua bumbu meresap sempurna ke dalam daging ikan, menghasilkan tekstur yang lembut dan kuah yang kental kaya rasa. Setiap suapan akan membawa Anda pada petualangan rasa yang kompleks: pedas, asam, gurih, dan sedikit manis yang berpadu harmonis.</p>
+            
+            <img src="https://placehold.co/800x400/84cc16/ffffff?text=Bumbu+dan+Rempah+Segar" alt="Bahan-bahan segar pilihan untuk resep autentik asam pedas Profesor" class="rounded-lg shadow-md my-8">
+            
+            <p>Testimoni dari pelanggan setia kami adalah bukti nyata dari kualitas yang kami tawarkan. "Kuahnya tiada duanya, pedas dan segarnya pas!" kata salah seorang pelanggan kami.</p>
+
+            <p>Apakah Anda siap untuk membuktikan sendiri kelezatannya? Jangan tunda lagi, segera <a href="#" data-target="order" class="text-orange-600 hover:underline">pesan sekarang juga</a> dan rasakan keistimewaan Asam Pedas Profesor yang legendaris!</p>
+        </article>
+        
+    </main>
+    
+    <footer class="bg-white mt-12 border-t">
+        <div class="container mx-auto px-6 py-4 text-center text-gray-600">
+            <p>&copy; 2024 Resto Asam Pedas Profesor. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

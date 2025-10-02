@@ -1,0 +1,10 @@
+body {
+            font-family: 'Inter', sans-serif;
+        }
+        h1, h2, h3, .font-display {
+            font-family: 'Playfair Display', serif;
+        }
+        .active-link {
+            border-bottom: 2px solid #c2410c; /* orange-700 */
+            color: #c2410c;
+        }
